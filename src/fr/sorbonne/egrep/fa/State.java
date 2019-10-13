@@ -30,4 +30,10 @@ public class State {
         this.transitions.put(tr.getRule(), tr);
         return this;
     }
+
+
+    @Override
+    public String toString() {
+        return "State : { isFinal : " + isFinal + ", transitions : " + transitions + " }";
+    }
 }

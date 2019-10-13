@@ -1,6 +1,6 @@
 package fr.sorbonne.egrep.fa;
 
-public class Transition  {
+public class Transition {
 
     private String rule;
     private State next;
@@ -19,4 +19,8 @@ public class Transition  {
         return rule;
     }
 
+    @Override
+    public String toString() {
+        return " ( " + rule + " -> " + next + ") ";
+    }
 }
