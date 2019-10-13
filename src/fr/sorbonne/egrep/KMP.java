@@ -1,4 +1,4 @@
-package fr.sorbonne.daar;
+package fr.sorbonne.egrep;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

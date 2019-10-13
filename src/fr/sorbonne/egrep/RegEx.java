@@ -1,4 +1,4 @@
-package fr.sorbonne.daar;
+package fr.sorbonne.egrep;
 
 import java.util.Scanner;
 import java.util.ArrayList;
