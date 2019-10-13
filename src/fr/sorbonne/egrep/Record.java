@@ -27,7 +27,7 @@ public class Record {
 
     @Override
     public String toString() {
-        return "Record [word=" + word + ", line=" + line + ", column=" + column + "]";
+        return word;
     }
 
     public String getPosition() {
