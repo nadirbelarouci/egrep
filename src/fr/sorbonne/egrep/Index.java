@@ -26,7 +26,6 @@ public class Index {
 
     private void process() throws IOException {
         records = Files.lines(Paths.get(fileName))
-                .parallel()
                 .flatMap(line -> processLine(line.toLowerCase()))
                 .collect(groupingBy(record -> record.getWord().charAt(0)));
     }
