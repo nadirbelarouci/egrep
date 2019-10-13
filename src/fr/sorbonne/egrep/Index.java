@@ -10,8 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.*;
 
 public class Index {
     private static Map<String, int[]> kmpTable = new ConcurrentHashMap<>();
@@ -59,5 +58,10 @@ public class Index {
 
     public Map<Character, List<Record>> getRecords() {
         return records;
+    }
+
+    @Override
+    public String toString() {
+        return records.entrySet().stream().map(Object::toString).collect(joining("\n"));
     }
 }
